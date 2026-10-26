@@ -798,9 +798,8 @@ import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/
     camera.updateProjectionMatrix();
   }
   function draw(p) {
-    scissors.rotation.z = p * Math.PI * 2;
-    scissors.rotation.y = 0.7 * Math.sin(p * Math.PI * 4);
-    scissors.rotation.x = 0.3;
+    scissors.rotation.y = -0.7 + p * Math.PI * 2;
+    scissors.rotation.x = 0.28;
     renderer.render(scene, camera);
   }
 
